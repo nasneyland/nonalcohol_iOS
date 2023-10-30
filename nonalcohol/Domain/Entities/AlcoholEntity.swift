@@ -9,7 +9,8 @@ import Foundation
 
 public struct AlcoholEntity: Identifiable {
     public let id: String
-    public let date: Date
+    public var date: String
+    public var state: Bool
 }
 
 public enum AlcoholState {
@@ -20,4 +21,10 @@ public enum AlcoholState {
     case AlcoholLv4
     case AlcoholLv5
     case MaxAlcohol
+}
+
+public enum NonalcoholSuccessState {
+    case none
+    case success
+    case fail
 }

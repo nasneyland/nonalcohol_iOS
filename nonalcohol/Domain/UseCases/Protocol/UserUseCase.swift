@@ -11,7 +11,8 @@ import Combine
 // User UseCase 정의서
 public protocol UserUseCase {
     func checkUserInfo() -> AnyPublisher<Bool, Error>
-    func fetchUserInfo() -> AnyPublisher<UserEntity, Error>
+    func fetchUserInfo() -> AnyPublisher<UserEntity, Never>
     func saveUserNickname(user: UserEntity)
+    func saveUserResolution(resolution: String)
     func deleteUserInfo()
 }

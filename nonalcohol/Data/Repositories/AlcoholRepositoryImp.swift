@@ -18,26 +18,26 @@ class AlcoholRepositoryImp: AlcoholRepository {
 }
 
 extension AlcoholRepositoryImp {
-    func getAlcoholData() -> AnyPublisher<[AlcoholEntity], Never> {
-        return dataSource.getAlcoholDateList()
-            .map({ alcoholDTOList in
-                
-                var alcoholEntities = [AlcoholEntity]()
-                for alcohol in alcoholDTOList {
-                    alcoholEntities.append(alcohol.dto())
-                }
-                
-                return alcoholEntities
-            })
+    func getAlcohol(date: String) -> AnyPublisher<AlcoholEntity?, Never> {
+        return dataSource.getAlcohol(date: date)
+            .map{ $0?.dto() }
             .eraseToAnyPublisher()
     }
     
+    func updateAlcoholData(id: String, state: Bool) {
+        dataSource.updateAlcohol(id, state: state)
+    }
+    
     func setAlcoholData(alcohol: AlcoholEntity) {
-        let alcoholDTO = AlcoholDTO(id: alcohol.id, date: alcohol.date)
+        let alcoholDTO = AlcoholDTO(id: alcohol.id, date: alcohol.date, state: alcohol.state)
         dataSource.insertAlcohol(alcoholDTO)
     }
     
     func deleteAlcoholData(id: String) {
         dataSource.deleteAlcohol(id)
+    }
+    
+    func getLastAlcoholDate() -> AnyPublisher<String?, Never> {
+        dataSource.getLastAlcoholDate()
     }
 }

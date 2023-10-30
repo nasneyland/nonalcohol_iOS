@@ -16,6 +16,11 @@
 		5500EFC82AE75F2C0007784A /* AlcoholUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5500EFC72AE75F2C0007784A /* AlcoholUseCaseImp.swift */; };
 		5500EFCA2AE765500007784A /* AlcoholRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5500EFC92AE765500007784A /* AlcoholRepositoryImp.swift */; };
 		5500EFCC2AE7B5F90007784A /* CustomCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5500EFCB2AE7B5F90007784A /* CustomCalendarView.swift */; };
+		5512DBC12AEF2C34009D7022 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512DBC02AEF2C34009D7022 /* Color+Extension.swift */; };
+		5512DBC32AEF30D6009D7022 /* RestoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512DBC22AEF30D6009D7022 /* RestoreView.swift */; };
+		5512DBC52AEF3262009D7022 /* RestoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512DBC42AEF3262009D7022 /* RestoreViewModel.swift */; };
+		5512DBC72AEF373A009D7022 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512DBC62AEF373A009D7022 /* CustomButtonStyle.swift */; };
+		5512DBC92AEF65DB009D7022 /* CustomActionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512DBC82AEF65DB009D7022 /* CustomActionButtonStyle.swift */; };
 		552D29472ADE58D400A404D3 /* AlcoholDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D29462ADE58D400A404D3 /* AlcoholDataSource.swift */; };
 		552D29492ADE656C00A404D3 /* AlcoholEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D29482ADE656C00A404D3 /* AlcoholEntity.swift */; };
 		552D294B2ADE76DF00A404D3 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D294A2ADE76DF00A404D3 /* UserRepository.swift */; };
@@ -33,7 +38,7 @@
 		556AD8312AD63F3F004B7182 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AD8302AD63F3F004B7182 /* HomeView.swift */; };
 		556AD8332AD63F49004B7182 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AD8322AD63F49004B7182 /* HomeViewModel.swift */; };
 		556C61782AEB47D2003DC350 /* TimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C61772AEB47D2003DC350 /* TimeUtil.swift */; };
-		556C617B2AEB52CF003DC350 /* Calendar + Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C617A2AEB52CF003DC350 /* Calendar + Extenstion.swift */; };
+		556C617B2AEB52CF003DC350 /* Calendar+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C617A2AEB52CF003DC350 /* Calendar+Extenstion.swift */; };
 		556C617D2AEB5359003DC350 /* CustomCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C617C2AEB5359003DC350 /* CustomCalendarCell.swift */; };
 		55B2E1A22AD681E800461840 /* UserUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2E1A12AD681E800461840 /* UserUseCaseImp.swift */; };
 		55B2E1A52AD6910500461840 /* UserRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2E1A42AD6910500461840 /* UserRepositoryImp.swift */; };
@@ -46,6 +51,7 @@
 		55EE044C2AD63DD7003DF7D5 /* nonalcoholTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EE044B2AD63DD7003DF7D5 /* nonalcoholTests.swift */; };
 		55EE04562AD63DD7003DF7D5 /* nonalcoholUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EE04552AD63DD7003DF7D5 /* nonalcoholUITests.swift */; };
 		55EE04582AD63DD7003DF7D5 /* nonalcoholUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EE04572AD63DD7003DF7D5 /* nonalcoholUITestsLaunchTests.swift */; };
+		FDA5770B2AEE1DF700D4445E /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA5770A2AEE1DF700D4445E /* SettingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,11 @@
 		5500EFC72AE75F2C0007784A /* AlcoholUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholUseCaseImp.swift; sourceTree = "<group>"; };
 		5500EFC92AE765500007784A /* AlcoholRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholRepositoryImp.swift; sourceTree = "<group>"; };
 		5500EFCB2AE7B5F90007784A /* CustomCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarView.swift; sourceTree = "<group>"; };
+		5512DBC02AEF2C34009D7022 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		5512DBC22AEF30D6009D7022 /* RestoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreView.swift; sourceTree = "<group>"; };
+		5512DBC42AEF3262009D7022 /* RestoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreViewModel.swift; sourceTree = "<group>"; };
+		5512DBC62AEF373A009D7022 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		5512DBC82AEF65DB009D7022 /* CustomActionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionButtonStyle.swift; sourceTree = "<group>"; };
 		552D29462ADE58D400A404D3 /* AlcoholDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholDataSource.swift; sourceTree = "<group>"; };
 		552D29482ADE656C00A404D3 /* AlcoholEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholEntity.swift; sourceTree = "<group>"; };
 		552D294A2ADE76DF00A404D3 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
@@ -93,7 +104,7 @@
 		556AD8302AD63F3F004B7182 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		556AD8322AD63F49004B7182 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		556C61772AEB47D2003DC350 /* TimeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtil.swift; sourceTree = "<group>"; };
-		556C617A2AEB52CF003DC350 /* Calendar + Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar + Extenstion.swift"; sourceTree = "<group>"; };
+		556C617A2AEB52CF003DC350 /* Calendar+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extenstion.swift"; sourceTree = "<group>"; };
 		556C617C2AEB5359003DC350 /* CustomCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarCell.swift; sourceTree = "<group>"; };
 		55B2E1A12AD681E800461840 /* UserUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCaseImp.swift; sourceTree = "<group>"; };
 		55B2E1A42AD6910500461840 /* UserRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImp.swift; sourceTree = "<group>"; };
@@ -110,6 +121,7 @@
 		55EE04512AD63DD7003DF7D5 /* nonalcoholUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nonalcoholUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EE04552AD63DD7003DF7D5 /* nonalcoholUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nonalcoholUITests.swift; sourceTree = "<group>"; };
 		55EE04572AD63DD7003DF7D5 /* nonalcoholUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nonalcoholUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDA5770A2AEE1DF700D4445E /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +190,7 @@
 		556AD82A2AD63E00004B7182 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				FDA577092AEE1DD400D4445E /* Model */,
 				55B2E2062ADD226100461840 /* RepositoryInterface */,
 				55B2E1B72AD7A97800461840 /* Entities */,
 				55B2E1A02AD681C900461840 /* UseCases */,
@@ -213,6 +226,8 @@
 			children = (
 				5500EFCB2AE7B5F90007784A /* CustomCalendarView.swift */,
 				556C617C2AEB5359003DC350 /* CustomCalendarCell.swift */,
+				5512DBC62AEF373A009D7022 /* CustomButtonStyle.swift */,
+				5512DBC82AEF65DB009D7022 /* CustomActionButtonStyle.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -220,7 +235,8 @@
 		556C61792AEB52BD003DC350 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				556C617A2AEB52CF003DC350 /* Calendar + Extenstion.swift */,
+				556C617A2AEB52CF003DC350 /* Calendar+Extenstion.swift */,
+				5512DBC02AEF2C34009D7022 /* Color+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -258,8 +274,9 @@
 		55B2E1B32AD77A9300461840 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				556AD8322AD63F49004B7182 /* HomeViewModel.swift */,
 				552D295D2ADFD62E00A404D3 /* LoginViewModel.swift */,
+				5512DBC42AEF3262009D7022 /* RestoreViewModel.swift */,
+				556AD8322AD63F49004B7182 /* HomeViewModel.swift */,
 				552D29652AE127EB00A404D3 /* SettingViewModel.swift */,
 				5500EFC12AE75E4E0007784A /* CalendarViewModel.swift */,
 			);
@@ -270,8 +287,9 @@
 			isa = PBXGroup;
 			children = (
 				556C61762AEB44BB003DC350 /* Custom */,
-				556AD8302AD63F3F004B7182 /* HomeView.swift */,
 				552D29582ADF717500A404D3 /* LoginView.swift */,
+				5512DBC22AEF30D6009D7022 /* RestoreView.swift */,
+				556AD8302AD63F3F004B7182 /* HomeView.swift */,
 				552D29632AE127DF00A404D3 /* SettingView.swift */,
 				552D29672AE129F800A404D3 /* CalendarView.swift */,
 			);
@@ -369,6 +387,14 @@
 				55EE04572AD63DD7003DF7D5 /* nonalcoholUITestsLaunchTests.swift */,
 			);
 			path = nonalcoholUITests;
+			sourceTree = "<group>";
+		};
+		FDA577092AEE1DD400D4445E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDA5770A2AEE1DF700D4445E /* SettingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,6 +532,8 @@
 				55B2E1A82AD693BE00461840 /* AppDelegate.swift in Sources */,
 				552D29642AE127DF00A404D3 /* SettingView.swift in Sources */,
 				5500EFC82AE75F2C0007784A /* AlcoholUseCaseImp.swift in Sources */,
+				5512DBC32AEF30D6009D7022 /* RestoreView.swift in Sources */,
+				FDA5770B2AEE1DF700D4445E /* SettingModel.swift in Sources */,
 				55B2E1A22AD681E800461840 /* UserUseCaseImp.swift in Sources */,
 				552D29492ADE656C00A404D3 /* AlcoholEntity.swift in Sources */,
 				55B2E2052ADD127100461840 /* UserEntity.swift in Sources */,
@@ -513,12 +541,15 @@
 				5500EFC42AE75EA70007784A /* AlcoholRepository.swift in Sources */,
 				55B2E1A52AD6910500461840 /* UserRepositoryImp.swift in Sources */,
 				5500EFC62AE75F020007784A /* AlcoholUseCase.swift in Sources */,
+				5512DBC92AEF65DB009D7022 /* CustomActionButtonStyle.swift in Sources */,
 				552D29F82AE2759900A404D3 /* MainRouter.swift in Sources */,
+				5512DBC72AEF373A009D7022 /* CustomButtonStyle.swift in Sources */,
 				5500EFCA2AE765500007784A /* AlcoholRepositoryImp.swift in Sources */,
 				552D29622AE0F5C100A404D3 /* UserDefaultKey.swift in Sources */,
 				552D29F62AE24FEA00A404D3 /* AppDIInterface.swift in Sources */,
 				556AD8332AD63F49004B7182 /* HomeViewModel.swift in Sources */,
 				552D29572ADF693D00A404D3 /* AppDI.swift in Sources */,
+				5512DBC12AEF2C34009D7022 /* Color+Extension.swift in Sources */,
 				556AD8312AD63F3F004B7182 /* HomeView.swift in Sources */,
 				552D29532ADF631B00A404D3 /* nonalcoholApp.swift in Sources */,
 				5500EFC22AE75E4E0007784A /* CalendarViewModel.swift in Sources */,
@@ -527,12 +558,13 @@
 				552D29592ADF717500A404D3 /* LoginView.swift in Sources */,
 				5500EFBA2AE66A150007784A /* AlcoholDTO.swift in Sources */,
 				552D294B2ADE76DF00A404D3 /* UserRepository.swift in Sources */,
-				556C617B2AEB52CF003DC350 /* Calendar + Extenstion.swift in Sources */,
+				556C617B2AEB52CF003DC350 /* Calendar+Extenstion.swift in Sources */,
 				5500EFBF2AE75A4F0007784A /* CoreDataManager.swift in Sources */,
 				552D29662AE127EB00A404D3 /* SettingViewModel.swift in Sources */,
 				5500EFBD2AE759C80007784A /* DataModel.xcdatamodeld in Sources */,
 				552D295E2ADFD62E00A404D3 /* LoginViewModel.swift in Sources */,
 				552D29552ADF63B500A404D3 /* ContainerView.swift in Sources */,
+				5512DBC52AEF3262009D7022 /* RestoreViewModel.swift in Sources */,
 				556C617D2AEB5359003DC350 /* CustomCalendarCell.swift in Sources */,
 				5500EFCC2AE7B5F90007784A /* CustomCalendarView.swift in Sources */,
 			);
@@ -704,7 +736,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -745,7 +777,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;

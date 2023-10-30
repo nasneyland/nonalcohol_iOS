@@ -10,7 +10,9 @@ import Combine
 
 // Alcohol UseCase 정의서
 public protocol AlcoholUseCase {
-    func getAlcoholData() -> AnyPublisher<[AlcoholEntity], Never>
-    func setAlcoholData(alcohol: AlcoholEntity)
-    func deleteAlcoholData(id: String)
+    func getAlcohol(date: String) -> AnyPublisher<AlcoholEntity?, Never>
+    func updateAlcoholState(id: String, state: Bool)
+    func insertAlcohol(alcohol: AlcoholEntity)
+    func deleteAlcohol(id: String)
+    func getLastAlcoholDate() -> AnyPublisher<String?, Never>
 }

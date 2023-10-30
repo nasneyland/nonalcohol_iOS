@@ -40,14 +40,14 @@ struct CalendarView: View {
                     CustomCalendarView(dateInterval: interval) { date in
                         // 캘린더 날짜 셀
                         CustomCalendarCell(date: DateFormatter.day.string(from: date))
-                            .foregroundColor(.black)
+                            .foregroundStyle(.black)
                     } header: {
                         // 캘린더 요일 행
                         Text(DateFormatter.weekDay.string(from: $0))
                     } trailing: {
                         // 빈 날짜 셀
                         CustomCalendarCell(date: DateFormatter.day.string(from: $0))
-                            .foregroundColor(.gray)
+                            .foregroundStyle(.gray)
                     }
                 }
                 

@@ -14,24 +14,35 @@ struct LoginView: View {
     @ObservedObject public var vm: LoginViewModel
     
     var body: some View {
-        VStack {
-            Text("로그인\(vm.user.nickname)")
-            
-            VStack {
-                Text("닉네임을 입력해주세요")
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                TextField("닉네임", text: $vm.user.nickname)
+        NavigationView {
+            VStack(spacing: 10) {
+                VStack {
+                    Text("안녕하세요\n이름을 입력해주세요.")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    HStack {
+                        TextField("닉네임", text: $vm.user.nickname)
+                        Text("님")
+                    }
+                }
+                Button(action: {
+                    if !vm.user.nickname.isEmpty {
+                        vm.saveUserNickname()
+                        mainRouter.checkLogined()
+                    }
+                }, label: {
+                    Text("입장하기")
+                        .foregroundStyle(Color.white)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                })
+                .buttonStyle(CustomButtonStyle(isActive: !vm.user.nickname.isEmpty))
+                
+                NavigationLink(destination: RestoreView(vm: mainRouter.appDI.restoreDependencies())) {
+                    Text("데이터 복구를 원하시나요?")
+                }
+                
+                Spacer()
             }
-            Button(action: {
-                vm.saveUserNickname()
-                mainRouter.checkLogined()
-            }, label: {
-                Text("시작하기")
-            })
-            .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Spacer()
+            .padding(25)
         }
-        .padding(25)
     }
 }

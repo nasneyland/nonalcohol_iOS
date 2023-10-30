@@ -9,7 +9,6 @@ import Foundation
 import Combine
 
 class AlcoholUseCaseImp: AlcoholUseCase {
-    
     let alcoholRepository: AlcoholRepository
     
     init(alcoholRepository: AlcoholRepository) {
@@ -19,15 +18,23 @@ class AlcoholUseCaseImp: AlcoholUseCase {
 
 // Alcohol 관련 UseCase 구현부
 extension AlcoholUseCaseImp {
-    func getAlcoholData() -> AnyPublisher<[AlcoholEntity], Never> {
-        return alcoholRepository.getAlcoholData()
+    func getAlcohol(date: String) -> AnyPublisher<AlcoholEntity?, Never> {
+        alcoholRepository.getAlcohol(date: date)
     }
     
-    func setAlcoholData(alcohol: AlcoholEntity) {
+    func updateAlcoholState(id: String, state: Bool) {
+        alcoholRepository.updateAlcoholData(id: id, state: state)
+    }
+    
+    func insertAlcohol(alcohol: AlcoholEntity) {
         alcoholRepository.setAlcoholData(alcohol: alcohol)
     }
     
-    func deleteAlcoholData(id: String) {
+    func deleteAlcohol(id: String) {
         alcoholRepository.deleteAlcoholData(id: id)
+    }
+    
+    func getLastAlcoholDate() -> AnyPublisher<String?, Never> {
+        alcoholRepository.getLastAlcoholDate()
     }
 }

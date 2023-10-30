@@ -20,6 +20,8 @@ public final class SettingViewModel: ObservableObject {
     public init(userUseCase: UserUseCase) {
         self.userUseCase = userUseCase
     }
+    
+    @Published var isAllowPush = false
 }
 
 extension SettingViewModel: SettingViewModelInput {

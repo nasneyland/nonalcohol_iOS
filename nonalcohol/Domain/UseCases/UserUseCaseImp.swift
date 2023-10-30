@@ -9,7 +9,6 @@ import Foundation
 import Combine
 
 class UserUseCaseImp: UserUseCase {
-    
     let userRepository: UserRepository
     
     init(userRepository: UserRepository) {
@@ -23,12 +22,16 @@ extension UserUseCaseImp {
         userRepository.checkUserInfo()
     }
     
-    func fetchUserInfo() -> AnyPublisher<UserEntity, Error> {
+    func fetchUserInfo() -> AnyPublisher<UserEntity, Never> {
         userRepository.fetchUserInfo()
     }
     
     func saveUserNickname(user: UserEntity) {
         userRepository.saveUserNickname(user: user)
+    }
+    
+    func saveUserResolution(resolution: String) {
+        userRepository.saveUserResolution(resolution: resolution)
     }
     
     func deleteUserInfo() {

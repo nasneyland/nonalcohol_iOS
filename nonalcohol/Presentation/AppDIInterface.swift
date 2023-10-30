@@ -15,4 +15,5 @@ public protocol AppDIInterface {
     func homeDependencies() -> HomeViewModel
     func settingDependencies() -> SettingViewModel
     func calendarDependencies() -> CalendarViewModel
+    func restoreDependencies() -> RestoreViewModel
 }

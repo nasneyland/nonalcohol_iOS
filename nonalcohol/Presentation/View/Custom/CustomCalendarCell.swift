@@ -26,7 +26,7 @@ struct CustomCalendarCell: View {
 //                    Image(systemName: "circlebadge.fill")
 //                        .resizable()
 //                        .frame(width: 5, height: 5)
-//                        .foregroundColor(time != "" ? Color._FFD600 : Color.white)
+//                        .foregroundColor(time != "" ? Color._FFD600 : Color.white) -> style
 //                }
             }
             

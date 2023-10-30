@@ -57,4 +57,15 @@ public final class AppDI: AppDIInterface {
         let viewModel = CalendarViewModel(alcoholUseCase: useCase)
         return viewModel
     }
+    
+    // 데이터복구VM 주입
+    public func restoreDependencies() -> RestoreViewModel {
+        let userRepository = UserRepositoryImp()
+        let userUseCase = UserUseCaseImp(userRepository: userRepository)
+        let alcoholDataSource = AlcoholDataSource()
+        let alcoholRepository = AlcoholRepositoryImp(alcoholDataSource: alcoholDataSource)
+        let alcoholUseCase = AlcoholUseCaseImp(alcoholRepository: alcoholRepository)
+        let viewModel = RestoreViewModel(userUseCase: userUseCase, alcoholUseCase: alcoholUseCase)
+        return viewModel
+    }
 }

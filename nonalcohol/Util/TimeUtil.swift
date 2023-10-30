@@ -9,6 +9,31 @@ import Foundation
 
 class TimeUtil {
     
+    /// Date를 DB 형식의 DateString으로 변환
+    func dateToString(_ date: Date) -> String {
+        let date:Date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.string(from: date)
+    }
+    
+    /// DateString 형식의 날짜를 Date 형식으로 변환
+    func dateInterval(_ date: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.date(from: date) ?? Date()
+    }
+    
+    /// 날짜 사이의 일수 변환
+    func daysBetweenDates(startDate: Date, endDate: Date) -> Int {
+        let calendar = Calendar.current
+        let startOfStartDate = calendar.startOfDay(for: startDate)
+        let startOfEndDate = calendar.startOfDay(for: endDate)
+        
+        let components = calendar.dateComponents([.day], from: startOfStartDate, to: startOfEndDate)
+        return components.day ?? 0
+    }
+    
     /// 연도, 월 로 달력 시작과 끝 일자 게산
     func getCalendarDate(year: Int, month: Int) -> DateInterval {
         let lastDate = getMonthLastDate(year: year, month: month, date: 1)
